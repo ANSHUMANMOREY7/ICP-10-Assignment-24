@@ -1,44 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product card</title>
 </head>
 <style>
-    .box{
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box {
         border: black solid 2px;
-        height: 500px;
+        border-radius: 10px;
+        height: fit-content;
         width: 400px;
         padding: 10px;
         margin: 10px;
     }
-    .img-shoes{
+
+    .img-shoes {
         height: 250px;
         display: block;
         margin: 0 auto;
     }
-    .heading{
+
+    .heading {
         padding: 0;
         margin: 0;
         text-align: center;
         font-size: 60px;
     }
-    .discription{
-        padding: 0px; 
+
+    .discription {
+        padding: 0px;
         margin: 0;
         text-align: justify;
-        
-        
+
+
+    }
+    .img-minus{
+        height: 40px;
+    }
+    .img-plus{
+        height: 40px;
+    }
+    .text{
+        font-size: 40px;
+        padding: 20px;   
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+        padding:  5px 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+       
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 10px;
     }
 </style>
+
 <body>
     <div class="container">
         <div class="box">
             <h1 class="heading">SHOES</h1>
             <img src="sneakers.png" alt="shoes" class="img-shoes">
-            <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quidem numquam est cum magnam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum! Lorem ipsum dolor sit.dignissimos rem quia repellat esse tenetur.</p>
+            <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci quidem numquam est
+                cum magnam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum! Lorem ipsum dolor
+                sit.dignissimos rem quia repellat esse tenetur.</p>
+            <div class="main">
+                <img src="minus.png" alt="" class="img-minus">
+                <span class="text">0</span>
+                <img src="plus.png" alt="" class="img-plus">
+            </div>
+            <button class="btn">add to cart</button>
         </div>
     </div>
 </body>
+
 </html>

@@ -87,13 +87,26 @@
                 cum magnam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum! Lorem ipsum dolor
                 sit.dignissimos rem quia repellat esse tenetur.</p>
             <div class="main">
-                <img src="minus.png" alt="" class="img-minus">
-                <span class="text">0</span>
-                <img src="plus.png" alt="" class="img-plus">
+                <img src="minus.png" alt="" class="img-minus" onclick="decrement()">
+                <span class="text" id="text">0</span>
+                <img src="plus.png" alt="" class="img-plus" onclick="increment()">
             </div>
             <button class="btn">add to cart</button>
         </div>
     </div>
+    <script>
+        const ElementText =document.getElementById('text')
+        function increment() {
+         let num = ElementText.innerText ;
+       
+            ElementText.innerText= ++num;
+        
+        }
+        function decrement() {
+            let num =ElementText.innerText ;
+            ElementText.innerText=--num;
+        }
+    </script>
 </body>
 
 </html>
